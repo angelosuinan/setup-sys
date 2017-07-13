@@ -1,0 +1,6 @@
+auth/
+production/
+inventory/
+ordering/
+attendance/
+*.swp

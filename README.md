@@ -12,47 +12,58 @@ linux operating system
 What things you need to install the software and how to install them
 
 
-Linux - mandatory
-git
-atom - download then ctrl shift P, type install package, search and install linter-pycodestyle
-Get and follow instructions in [dotfiles](https://github.com/angelosuinan/dotfiles) - awesome dotfiles
+* Linux - mandatory
+* git
+* atom - download then ctrl shift P, type install package, search and install linter-pycodestyle
+* Get and follow instructions in [dotfiles](https://github.com/angelosuinan/dotfiles) - awesome dotfiles
 
-Create a projects folder
+* Create a projects folder
 ```
 cd ~/
 mkdir projects
 ```
-Get [docker](https://github.com/docker/docker-install) - Dependency Management
+* Get [docker](https://github.com/docker/docker-install) - Dependency Management
 ```
 curl -fsSL get.docker.com -o get-docker.sh
 sh get-docker.sh
 ```
-Get [docker-compose](https://docs.docker.com/compose/install/) - run multiple containers
+* Get [docker-compose](https://docs.docker.com/compose/install/) - run multiple containers
 ```
 pip install docker-compose
 ```
+* add ssh key
+  - Get [ssh-key](https://help.github.com/articles/connecting-to-github-with-ssh/) - generate ssh key
+
 
 ### Installing
 
 A step by step series of examples that tell you have to get a development env running
 
-On the home folder
+* On the home folder
 ```
 cd ~/
-cd setup-sys
-make setup-main
-make setup-build
-```
-Run the Containers
-```
-docker-compose -f docker-compose.yml up -d
-```
-Example logs and debugging
-```
-docker-compose -f docker-compose.yml logs --tail 10 -f <sytem_name>
+git clone git@github.com:angelosuinan/setup-sys.git setup
+cd setup
+make setup
+make build
 ```
 
-End with an example of getting some data out of the system or using it for a little demo
+### Local development
+* Run the Containers
+```
+make run
+```
+* Example logs, printing and debugging a system, make sure your on tmux
+  - make logs-<system_name>
+```
+tmux
+make logs-auth
+```
+* restart a system
+  - make logs-<system_name>
+```
+make logs-auth
+```
 
 ### And coding style tests
 
