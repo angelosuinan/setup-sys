@@ -7,6 +7,13 @@ System Analysis & Design, Object Oriented Programming & Relational Database Mana
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on the raspberry pi.
 linux operating system
 
+Systems
+* [Auth](https://github.com/angelosuinan/auth-sys) - Backend and authentication
+* [Ordering](https://github.com/angelosuinan/ordering-sys) - Ordering System frontend
+* [Attendance](https://github.com/docker/docker-install) - Attendance System frontend
+* [Production](https://github.com/docker/docker-install) - Production System frontend
+* [Inventory](https://github.com/docker/docker-install) - Inventory System frontend
+
 ### Prerequisites
 
 What things you need to install the software and how to install them
