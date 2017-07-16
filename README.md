@@ -21,9 +21,9 @@ What things you need to install the software and how to install them
 
 * Linux - mandatory
 * git
-* atom - download then ctrl shift P, type install package, search and install linter-pycodestyle
+* [atom](https://atom.io/) - download then ctrl shift P, type install package, search and install linter-pycodestyle
 * Get and follow instructions in [dotfiles](https://github.com/angelosuinan/dotfiles) - awesome dotfiles
-
+* [postman](https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop?hl=en) - download postman plugin for chrome
 * Create a projects folder
 ```
 cd ~/
