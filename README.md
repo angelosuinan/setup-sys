@@ -36,7 +36,7 @@ sh get-docker.sh
 ```
 * Get [docker-compose](https://docs.docker.com/compose/install/) - run multiple containers
 ```
-pip install docker-compose
+sudo pip install docker-compose
 ```
 * add ssh key
   - Get [ssh-key](https://help.github.com/articles/connecting-to-github-with-ssh/) - generate ssh key
