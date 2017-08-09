@@ -1,0 +1,42 @@
+version: "2"
+
+services:
+  db:
+    image: postgres:latest
+    ports:
+      - "5432:5432"
+  nginx-proxy:
+    image: jwilder/nginx-proxy
+    container_name: nginx-proxy
+    ports:
+      - "80:80"
+    volumes:
+      - /var/run/docker.sock:/tmp/docker.sock:ro
+  auth:
+    command: "python manage.py runserver 0.0.0.0:8000"
+    container_name: niftc
+    ports:
+      - "8000:8000"
+    environment:
+      - VIRTUAL_HOST=niftc.local
+    build: auth/
+    depends_on:
+      - db
+    volumes:
+      - "./auth/src:/auth"
+    links:
+      - db
+  attendance:
+    command: "python manage.py runserver 0.0.0.0:8001"
+    environment:
+      PYTHONUNBUFFERED: 1
+    build: attendance/
+    ports:
+      - "8001:8001"
+    links:
+      - auth
+    volumes:
+      - "./attendance/src:/attendance"
+volumes:
+  dev_volume:
+    driver: local
