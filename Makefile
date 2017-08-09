@@ -11,9 +11,14 @@ clone-attendance:
 	echo ${REPO_URL}
 	git clone -b ${BRANCH} --single-branch ${REPO_URL}/attendance-sys attendance
 
+clone-dashboard:
+	echo ${REPO_URL}
+	git clone -b ${BRANCH} --single-branch ${REPO_URL}/dashboard-sys dashboard
+
 setup:
 	-make clone-auth
 	-make clone-attendance
+	-make clone-dashboard
 
 COMPOSE_FILE ?= 'docker-compose.yml'
 COMPOSE_CMD = docker-compose -f $(COMPOSE_FILE)
@@ -35,6 +40,9 @@ log-attendance:
 log-db:
 	$(COMPOSE_CMD) logs --tail 10 -f db
 
+log-dashboard:
+	$(COMPOSE_CMD) logs --tail 10 -f dashboard
+
 restart-auth:
 	$(COMPOSE_CMD) restart auth
 
@@ -43,3 +51,6 @@ restart-attendance:
 
 restart-db:
 	$(COMPOSE_CMD) restart db
+
+restart-dashboard:
+	$(COMPOSE_CMD) restart dashboard
