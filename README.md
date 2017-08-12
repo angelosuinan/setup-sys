@@ -64,12 +64,12 @@ make run
   - make logs-<system_name>
 ```
 tmux
-make logs-auth
+make logs-web
 ```
 * restart a system
   - make logs-<system_name>
 ```
-make logs-auth
+make logs-web
 ```
 
 ### And coding style tests

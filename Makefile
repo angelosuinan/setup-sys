@@ -3,9 +3,9 @@ REPO_USER=angelosuinan
 REPO_URL=${REPO_HOST}:/${REPO_USER}
 BRANCH=development
 
-clone-auth:
+clone-web:
 	echo ${REPO_URL}
-	git clone -b ${BRANCH} --single-branch ${REPO_URL}/auth-sys auth
+	git clone -b ${BRANCH} --single-branch ${REPO_URL}/web-sys web
 
 clone-attendance:
 	echo ${REPO_URL}
@@ -16,7 +16,7 @@ clone-dashboard:
 	git clone -b ${BRANCH} --single-branch ${REPO_URL}/dashboard-sys dashboard
 
 setup:
-	-make clone-auth
+	-make clone-web
 	-make clone-attendance
 	-make clone-dashboard
 
@@ -31,8 +31,8 @@ up:
 build:
 	$(COMPOSE_CMD) build
 
-log-auth:
-	$(COMPOSE_CMD) logs --tail 10 -f auth
+log-web:
+	$(COMPOSE_CMD) logs --tail 10 -f web
 
 log-attendance:
 	$(COMPOSE_CMD) logs --tail 10 -f attendance
@@ -43,8 +43,8 @@ log-db:
 log-dashboard:
 	$(COMPOSE_CMD) logs --tail 10 -f dashboard
 
-restart-auth:
-	$(COMPOSE_CMD) restart auth
+restart-web:
+	$(COMPOSE_CMD) restart web
 
 restart-attendance:
 	$(COMPOSE_CMD) restart attendance
