@@ -7,6 +7,8 @@ A. Setup and Configuration
 
 B. Running
 
+	1. Start by running startinbackground.vbs
+
 
 C. Logs and Debugging
 

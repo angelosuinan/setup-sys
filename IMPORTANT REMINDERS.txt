@@ -3,3 +3,5 @@
 2. Do not delete web/db.sqlite3, this is the DATABASE
 
 3. It is recommended to backup the database by running <backup database.bat> regularly
+
+4. startinbackground runs the server in the background, start.
