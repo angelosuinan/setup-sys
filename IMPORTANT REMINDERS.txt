@@ -1,0 +1,5 @@
+1. Do not delete the folder web/ it contains the DATABASE
+
+2. Do not delete web/db.sqlite3, this is the DATABASE
+
+3. It is recommended to backup the database by running <backup database.bat> regularly
