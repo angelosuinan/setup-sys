@@ -5,7 +5,8 @@ ECHO.
 PAUSE
 
 ECHO .................UPDATING CONFIG FILES.................
-git config user.email "suinanangelo@gmail.com"
+git config --global user.email "suinanangelo@gmail.com"
+git config --global user.name "angelosuinan"
 git pull origin production
 
 ECHO .................BACKUP CONFIG FILES.................
