@@ -24,3 +24,21 @@ Once the shortcut has been created, right-click the file and select Cut.
 Press the Start button and type Run and press enter.
 In the Run window, type shell:startup to open the Startup folder.
 Once the Startup folder has been opened, click the Home tab at the top of the folder and select Paste to paste the shortcut into the folder.
+
+Birthday
+input or number sa dispersal
+input ng username sa dispersal
+
+extra time change to overtime
+
+--Employee profile--
+status (job, permanent)
+
+---Dispersal --- ---Production----
+
+Total of all fishes
+birthday
+
+logout url when refresh
+
+file sharing

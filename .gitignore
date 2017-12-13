@@ -2,4 +2,4 @@ web/
 attendance/
 dashboard/
 *.swp
-/installer
+installer/

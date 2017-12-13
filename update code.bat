@@ -6,11 +6,13 @@ PAUSE
 
 ECHO .................UPDATING CONFIG FILES.................
 git config user.email "suinanangelo@gmail.com"
+git checkout production
 git pull origin production
 
 
 ECHO .................UPDATING WEB FILES.................
 cd web/
+git checkout production
 git pull origin production
 
 ECHO .................DOWNLOADING and INSTALLING NEW REQUIREMENTS.................
