@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.9.7
+Created-By: 1.8.0_112-b15 (Oracle Corporation)
+Class-Path: lib/mysql-connector-java-5.1.40-bin.jar lib/commons-lang3-
+ 3.5.jar lib/controlsfx-8.40.11.jar lib/dpfpenrollment.jar lib/dpfpver
+ ification.jar lib/dpotapi.jar lib/dpotjni.jar lib/mysql-connector-jav
+ a-5.1.40-bin.jar
+X-COMMENT: Main-Class will be added automatically by build
+Main-Class: bfar_attendance.BFAR_Attendance
+
