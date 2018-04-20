@@ -29,8 +29,7 @@ git commit -m "update DATABASE"
 git push origin production
 
 ECHO .................BACKUP FINGERPRINT.................
-cd C:\fingers\
-dir
+cd C:/fingers/
 git add -A .
 git commit -m "update Fingerprint"
 git push origin master
