@@ -112,11 +112,4 @@ Pull request
 * When pull request was merge, imediately do git pull origin development from above
   but be aware of if you have unapplied changes
 
-## Authors
-
-* **Jamlang, Teejay** - *Initial work* - [githhub](https://github.com/abrahamlanggam)
-* **Pol Roman, Tristan** - *Initial work* - [github](https://github.com/aRTiPee)
-* **Punzalan, Daniel James** - *Initial work* - [github](https://github.com/djmp09)
-* **Suinan, Angelo** - *Initial work* - [github](https://github.com/angelosuinan)
-
 See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
